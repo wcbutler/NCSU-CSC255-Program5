@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0053)http://courses.ncsu.edu/csc255/lec/001/wrap/pgm5.html -->
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1141" name=GENERATOR></HEAD>
+<BODY>
+<H1>Perl Assignment #5</H1>
+<H1>Due: April 30th, 7PM</H1>
+<HR>
+<PRE>Objective: Use what we've learned about file and directory operations
+Estimated Time: 3Hrs. - 4Hrs.  (Most time will be spent debugging)
+=====================================================================
+
+This program will start in the current directory and list all the files in it.
+
+If there are directories in the current directory, the program will then list the files in that 
+directory, and so on.
+
+If a file ending in .txt is found, that filename should be changed so that it ends in .text
+
+If a file with the extension .delete is found, that file should be deleted
+
+If the file tree starting from the current directory is as follows:
+
+
+               [a(dir) b c  d(dir)]
+                  |          |
+             [e f(dir) g]  [h  i  j(dir) k(dir)]
+                  |		      |       |
+                [l.txt]              [m]   [n.delete o]
+
+
+Then your program should output the following.....
+
+Directory: ./
+Files: b c
+Directories:a d
+
+Directory: a
+Files: e g
+Directories: f
+
+Directory: d
+Files: h i
+Directories: j k
+
+Directory: f
+Files: l.text
+
+Directory: j
+Files: m
+
+Directory: k
+Files: o
+
+Other requirements
+==================
+You cannot use any modules in this program.
+</PRE></BODY></HTML>
